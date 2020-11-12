@@ -10,7 +10,7 @@ body {
     text-align: center;
 }
 .x{
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 0.2px white;
     color: black;
 }
   .signup {

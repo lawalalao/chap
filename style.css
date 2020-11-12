@@ -1,0 +1,167 @@
+body {
+    font-family: 'aller', sans-serif;
+    max-width: 310px;
+    margin: 100px auto;
+    padding: 20px 20px;
+    background: url('./assets/pexels-quintin-gellar-2199293.jpg') no-repeat center center / cover hsl(0, 100%, 74%) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+footer{
+    background-color: hsl(248, 32%, 49%);
+    box-sizing: border-box;
+    margin-top: 300px;
+    margin-bottom:0px;
+    
+    justify-content: space-between;
+    text-align: center;
+}
+.nav {
+
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 30px;
+    left: 30px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 0 25px;
+    background-color: transparent;
+     transition: top 0.3s;
+   
+    
+}
+
+
+.nav a {
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 25px;
+    color: hsl(248, 32%, 49%);
+    
+}
+
+.txt-type>.txt {
+    font-size: 35px;
+    color: hsl(0, 100%, 74%);
+    border-right: 0.2rem solid white;
+}
+
+p {
+    font-size: 14px;
+}
+
+.tryit-banner {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.tryit-banner p {
+    padding: 15px 0;
+}
+
+input, button {
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    font-weight: 600;
+    border: 1px solid hsl(245, 35%, 87%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: 0.1s;
+}
+
+input:hover {
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+.button {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: hsl(155, 73%, 9%);
+}
+
+.form-disclaimer {
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+}
+
+.terms {
+    text-decoration: none;
+    font-weight: 600;
+    color: hsl(0, 100%, 74%);
+}
+
+@media screen and (min-width: 900px) {
+   
+    .signup {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .signup-intro {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .signup-form {
+        width: 45%;
+    }
+
+    form {
+        padding: 30px;
+    }
+
+    body {
+        max-width: 1000px;
+        padding: 40px 20px;
+        background-image: url();
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

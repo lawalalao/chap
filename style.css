@@ -325,9 +325,7 @@ input:hover {
          background: url('./assets/hennie-stander-HMtrTYGTZgA-unsplash.jpg') no-repeat center cover/center;
     }
 
-    .nav {
-        background-color: white;
-    }
+    
 
     .signup {
         display: flex;
@@ -342,26 +340,66 @@ input:hover {
         width: 90%;
     }
 }
-@media screen and (max-width: 500px) {
-    body{
-        max-width: 300px;
-        display:flex;
-        flex-direction: column;
-        text-align:center;
-        background: url('./assets/hennie-stander-HMtrTYGTZgA-unsplash.jpg') no-repeat center cover/center;
-        
-    }
-    .nav{
-        background-color:white;
-    }
-    .signup{
-        text-align: center;
+
+@media screen and (max-width: 667px) {
+    body {
+        max-width: 667px;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
+        text-align: center;
+        background: url('./assets/hennie-stander-HMtrTYGTZgA-unsplash.jpg') no-repeat center cover/center;
+
+
     }
-    .signup-form{
+
+    .signup {
+
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+
+    .op h1 {
+        font-size: 35px;
+    }
+
+    .signup-form {
         text-align: center;
         width: 90%;
     }
 }
+@media screen and (max-width: 375px) {
+    body {
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: url('./assets/hennie-stander-HMtrTYGTZgA-unsplash.jpg') no-repeat center cover/center;
+        
 
+    }
+
+    .signup {
+
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       margin-right: 50px;
+    
+
+
+    }
+    .op{
+        text-align: center;
+    }
+ .op h1 {
+     font-size: 25px;
+ }
+
+
+    .signup-form {
+        text-align: center;
+        width: 90%;
+    }
+}

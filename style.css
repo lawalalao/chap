@@ -78,7 +78,7 @@ body {
 
 .txt-type>.txt {
     font-size: 35px;
-    color: hsl(0, 100%, 74%);
+    color:#1E90FF;
     border-right: 0.2rem solid white;
 }
 

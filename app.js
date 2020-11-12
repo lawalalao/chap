@@ -75,7 +75,7 @@ var prevScrollpos = window.pageYOffset;
       var currentScrollpos = window.pageYOffset;
       if(prevScrollpos > currentScrollpos) {
             document.getElementById("navbar").style.top = "0";
-            y.style.visibility = "hidden"
+            
       } else {
             document.getElementById("navbar").style.top = "-100";
       }
@@ -83,42 +83,43 @@ var prevScrollpos = window.pageYOffset;
       prevScrollpos = currentScrollpos;
 
       }
-// Setup End Date for Countdown (getTime == Time in Milleseconds)
-let launchDate = new Date("Jan 01, 2021 12:00:00").getTime();
+const countdown = document.querySelector(".countdown");
 
-// Setup Timer to tick every 1 second
-let timer = setInterval(tick, 1000);
+const interval = setInterval(() => {
+  const deadline = new Date(2021, 1, 10, 12, 00, 00);
 
-function tick () {
-  // Get current time
-  let now = new Date().getTime();
-  // Get the difference in time to get time left until reaches 0
-  let t = launchDate - now;
+  const current = new Date();
 
-  // Check if time is above 0
-  if (t > 0) {
-    // Setup Days, hours, seconds and minutes
-    // Algorithm to calculate days...
-    let days = Math.floor(t / (1000 * 60 * 60 * 24));
-    // prefix any number below 10 with a "0" E.g. 1 = 01
-    if (days < 10) { days = "0" + days; }
-    
-    // Algorithm to calculate hours
-    let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    if (hours < 10) { hours = "0" + hours; }
+  const diff = deadline - current;
 
-    // Algorithm to calculate minutes
-    let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    if (mins < 10) { mins = "0" + mins; }
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24)) + "";
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24) + "";
+  const minutes = Math.floor((diff / (1000 * 60)) % 60) + "";
+  const seconds = Math.floor((diff / 1000) % 60) + "";
 
-    // Algorithm to calc seconds
-    let secs = Math.floor((t % (1000 * 60)) / 1000);
-    if (secs < 10) { secs = "0" + secs; }
+  countdown.innerHTML = `
+    <div data-content="">${days.length === 1 ? `0${days}` : days}</div>
+    <div data-content="">${hours.length === 1 ? `0${hours}` : hours}</div>
+    <div data-content="">${
+      minutes.length === 1 ? `0${minutes}` : minutes
+    }</div>
+    <div data-content="">${
+      seconds.length === 1 ? `0${seconds}` : seconds
+    }</div>
+`;
 
-    // Create Time String
-    let time = `${days} : ${hours} : ${mins} : ${secs}`;
-
-    // Set time on document
-    document.querySelector('.countdown').innerText = time;
+  if (diff < 0) {
+    clearInterval(interval);
+    countdown.innerHTML = "<h1>Here We Go!!!</h1>";
   }
-}
+
+  document.querySelector(".reset").addEventListener("click", () => {
+    clearInterval(interval);
+
+    const divs = document.querySelectorAll(".countdown div");
+
+    divs.forEach((div) => {
+      div.innerHTML = "00";
+    });
+  });
+}, 1000);

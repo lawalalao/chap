@@ -9,8 +9,12 @@ body {
     color: black;
     text-align: center;
 }
-.x{
-    -webkit-text-stroke: 0.02px white;
+.x {
+    -webkit-text-stroke: 1px white;
+    color: black;
+}
+.z {
+    -webkit-text-stroke: 1px white;
     color: black;
 }
   .signup {

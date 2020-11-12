@@ -1,23 +1,3 @@
-let btnClear = document.querySelector('button');
-let inputs = document.querySelectorAll('input');
- 
-btnClear.addEventListener('click', () => {
-    inputs.forEach(input =>  input.value = '');
-});
-
-var prevScrollpos = window.pageYOffset;
-      window.onscroll = function() {
-
-      var currentScrollpos = window.pageYOffset;
-      if(prevScrollpos > currentScrollpos) {
-            document.getElementById("navbar").style.top = "0";
-      } else {
-            document.getElementById("navbar").style.top = "-100px";
-      }
-
-      prevScrollpos = currentScrollpos;
-
-      }
 
 
 // const TypeWriter = function(txtElement, words, wait = 3000) {
@@ -141,3 +121,18 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+
+var prevScrollpos = window.pageYOffset;
+      window.onscroll = function() {
+
+      var currentScrollpos = window.pageYOffset;
+      if(prevScrollpos > currentScrollpos) {
+            document.getElementById("navbar").style.top = "0";
+      } else {
+            document.getElementById("navbar").style.top = "-100px";
+      }
+
+      prevScrollpos = currentScrollpos;
+
+      }

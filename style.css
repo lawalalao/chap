@@ -32,7 +32,7 @@ body {
 
 .nav a {
     float: left;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     margin-left: 25px;
     color: black;
@@ -63,8 +63,12 @@ p {
 .tryit-banner p {
     padding: 15px 0;
 }
- font-family: 'Allerta Stencil',
+
+input, button {
+    font-family: 'Allerta Stencil',
     sans-serif;
+}
+
 form {
     background-color: #fff;
     margin-top: 20px;
@@ -255,7 +259,7 @@ input:hover {
       sans-serif;
        
     }
-
+   
     form {
         padding: 30px;
     }

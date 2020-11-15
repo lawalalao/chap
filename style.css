@@ -63,11 +63,8 @@ p {
 .tryit-banner p {
     padding: 15px 0;
 }
-
-input, button {
-    font-family: 'Poppins', sans-serif;
-}
-
+ font-family: 'Allerta Stencil',
+    sans-serif;
 form {
     background-color: #fff;
     margin-top: 20px;

@@ -17,7 +17,7 @@ body {
     top: 0;
     right: 30px;
     left: 30px;
-    height: 60px;
+    height: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -238,7 +238,18 @@ input:hover {
      }
  }
 @media screen and (min-width: 900px) {
-    
+    .nav{
+         height: 80px;
+    }
+    .nav a {
+        float: left;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 25px;
+        color: black;
+        text-decoration: none;
+
+    }
     .signup {
         display: flex;
         justify-content: space-between;

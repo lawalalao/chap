@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
-    <title>chapchap</title>
+    <title>Intro component with sign-up form</title>
 </head>
 <body>
     
-
         <div class="nav" id="navbar">
             <div class="logo">
                  <a href="#"> chapchap</a>
@@ -23,46 +20,31 @@
             </div>
         </div>
 
-
-        <section class="signup">
+    <section class="signup">
         <div class="signup-intro">
-            <div class="op">
-             <h1 class="z">Livraison pour 
+            <h1 class="z">Livraison pour 
                 <span class="txt-type" data-wait="500" data-words='["les colis", "les plis", "les marchandises", "le retail", "le dernier Kilometre"]'></span>
             </h1>
-            <h1 class="x">Service n°1 de livraison de colis géolocalisé pour <br>les professionnels au Togo</h1>
-            </div>
-
-                    
-            <div class="countdown"></div>
-      
-
+            <h1 class="x">Service n°1 de livraison de colis géolocalisé pour les professionnels au Togo</h1>
+             <div class="countdown"></div>
+        
         </div>
-
+           
         <div class="signup-form">
             <div class="tryit-banner">
-                <p><strong>Envie  d'en savoir plus?</strong></p>
+                <p>Envie d'en savoir<strong> plus ? </strong></p>
             </div>
     
-            <form class="ok" action="https://formspree.io/f/xgepzvvd" method="POST">
-                <input type="text" name="name" placeholder="Nom">
-                <input type="text" name="name" placeholder="Prenom">
-              
-                <input  type="email" name="_replyto" placeholder="Addresse email" required>
-                
-                <button class="button">ENVOYEZ</button>
+            <form action="">
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Prenom">
+                <input type="email" placeholder="Addresse email">
                
+                <button class="button">Envoyez</button>
+                
             </form>
-             
         </div>
-        
     </section>
-
-
-
-
-       
-</div>
 </body>
 <script src="./app.js"></script>
 <script>  var prevScrollpos = window.pageYOffset;
